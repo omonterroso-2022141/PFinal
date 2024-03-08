@@ -1,0 +1,576 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ProyectoBimestralV",
+    "dateExported": "2024-03-08T23:13:19.308Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "e6d17573-b45d-49ea-83de-670032c3418b",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-03-08T18:52:08.205Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "f9920fcd-2d6a-4d84-8b61-f16a5ead78ec",
+            "name": "product",
+            "containerId": "",
+            "created": "2024-03-08T18:52:08.206Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "e88cf537-286e-4ee1-9918-ac215d3a5bd2",
+            "name": "category",
+            "containerId": "",
+            "created": "2024-03-08T18:52:08.207Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "859e6128-8347-441b-983b-dad2409cc7b4",
+            "name": "shopping",
+            "containerId": "",
+            "created": "2024-03-08T18:52:08.208Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "38d9fe63-ce82-429e-9046-0b1fb56d7dde",
+            "name": "bill",
+            "containerId": "",
+            "created": "2024-03-08T18:52:08.209Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "88c7b8a4-95c1-43b5-a34f-886e69e49a88",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "e6d17573-b45d-49ea-83de-670032c3418b",
+            "name": "register",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-03-08T18:52:08.205Z",
+            "modified": "2024-03-08T20:06:17.358Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Oscar"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Monterroso"
+                    },
+                    {
+                        "name": "email",
+                        "value": "omonterroso@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "Bryan"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "9033e70a-24d9-46cf-a91c-7ac0ff38496c",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "e6d17573-b45d-49ea-83de-670032c3418b",
+            "name": "login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-03-08T18:52:08.206Z",
+            "modified": "2024-03-08T21:55:38.488Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "Bryan"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "4f6bfbbf-dc20-438e-8c3b-d8a0e64d72a0",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "e6d17573-b45d-49ea-83de-670032c3418b",
+            "name": "updateUser",
+            "url": "/user/updateUser/65eb6fb9e496afeeec82689a",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-08T18:52:08.207Z",
+            "modified": "2024-03-08T20:09:40.970Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViNmZiOWU0OTZhZmVlZWM4MjY4OWEiLCJ1c2VybmFtZSI6IkJyeWFuIiwibmFtZSI6Ik9zY2FyIiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTcwOTkyODQwNCwiZXhwIjoxNzA5OTM5MjA0fQ.aKjBycbdXPdBmG90E6r5byVMtiW9hYmERqEIMN2uOJg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "Edson2"
+                    },
+                    {
+                        "name": "password",
+                        "value": "123456",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "8e642b05-1d51-4304-a0cf-ed91649fc290",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "e6d17573-b45d-49ea-83de-670032c3418b",
+            "name": "deleteUser",
+            "url": "/user/delete/65d91cd85b7c105c9762bf0d",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-08T18:52:08.208Z",
+            "modified": "2024-03-08T18:52:08.208Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWQ5MWYxOTViN2MxMDVjOTc2MmJmMTMiLCJ1c2VybmFtZSI6Im9sYSIsIm5hbWUiOiJPc2NhciIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwODcyODQzNCwiZXhwIjoxNzA4NzM5MjM0fQ.uaNuFCPZ-p_3wj-PZB1RcribGQJFQnYYakRUe_pC5Ug"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "41bc697e-480e-4983-9e51-2f68c79e9c08",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "f9920fcd-2d6a-4d84-8b61-f16a5ead78ec",
+            "name": "saveProduct",
+            "url": "/product/saveProduct",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-03-08T18:52:08.209Z",
+            "modified": "2024-03-08T21:55:51.148Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViODk0OGEwNGQwMDFlYzBmNzgxMjgiLCJ1c2VybmFtZSI6IkJyeWFuIiwibmFtZSI6Ik9zY2FyIiwicm9sZSI6IkNMSUVOVCIsImlhdCI6MTcwOTkzNDkzOCwiZXhwIjoxNzA5OTQ1NzM4fQ.WIr4meA5EB9LtyUT58kmfhMUubliEmcNMpWNC0XgG2k"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameProduct",
+                        "value": "Pina"
+                    },
+                    {
+                        "name": "price",
+                        "value": "4.25"
+                    },
+                    {
+                        "name": "stock",
+                        "value": "20"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65eb8934a04d001ec0f78120"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "247426ea-9f89-4d8a-82b7-5b56ea715869",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "f9920fcd-2d6a-4d84-8b61-f16a5ead78ec",
+            "name": "deleteProduct",
+            "url": "/product/deleteProduct/65d8f23ed830aa6586457970",
+            "method": "DELETE",
+            "sortNum": 80000,
+            "created": "2024-03-08T18:52:08.210Z",
+            "modified": "2024-03-08T18:52:08.210Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d76b918b-1d03-4b74-ab81-35e1a104d214",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "f9920fcd-2d6a-4d84-8b61-f16a5ead78ec",
+            "name": "UpdateProduct",
+            "url": "/product/productUpdate/65eb72e9b29de8daa81a2793",
+            "method": "PUT",
+            "sortNum": 90000,
+            "created": "2024-03-08T18:52:08.211Z",
+            "modified": "2024-03-08T20:26:04.125Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViNzBhZWE3NzNmMGY3MWYwNjY2Y2IiLCJ1c2VybmFtZSI6Im9zY2FyaW4iLCJuYW1lIjoiT3NjYXJpbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTkyOTUyMiwiZXhwIjoxNzA5OTQwMzIyfQ.aw4SX02PMEH7P2P3o-gEtrsijGmAwZ6e0by2mNM_nZk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameProduct",
+                        "value": "Impresora"
+                    },
+                    {
+                        "name": "price",
+                        "value": "3500",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "stock",
+                        "value": "10",
+                        "isDisabled": true
+                    },
+                    {
+                        "name": "category",
+                        "value": "Electrodomesticos",
+                        "isDisabled": true
+                    }
+                ]
+            },
+            "reqType": "put",
+            "tests": []
+        },
+        {
+            "_id": "44f8ca9c-8bd2-4406-bcf4-7ca2e950d9ef",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "f9920fcd-2d6a-4d84-8b61-f16a5ead78ec",
+            "name": "listProduct",
+            "url": "/product/listProduct",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-03-08T18:52:08.212Z",
+            "modified": "2024-03-08T19:04:29.950Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViNjAzYTM5ZjM3MDMwMWYzNjFmOWQiLCJ1c2VybmFtZSI6Im9zY2FyaW4iLCJuYW1lIjoiT3NjYXJpbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTkyNDU1OCwiZXhwIjoxNzA5OTM1MzU4fQ.qNB_ynayVJVVBnLD2zpK2N3CE_BWiXMRw8rq0CNqsiY"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "0fa74727-4a78-4c09-bc82-398df0dcb98f",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "e88cf537-286e-4ee1-9918-ac215d3a5bd2",
+            "name": "saveCategory",
+            "url": "/category/saveCategory",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-03-08T18:52:08.213Z",
+            "modified": "2024-03-08T21:55:00.195Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViNzYyZDU1M2E2OWE0MmI4ZWZjYWQiLCJ1c2VybmFtZSI6Im9zY2FyaW4iLCJuYW1lIjoiT3NjYXJpbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTkzNDg3NiwiZXhwIjoxNzA5OTQ1Njc2fQ.18LbdOgrww6llGu5bHp-9lhQFFSHkHvaFwrAjX1PHiQ"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCategory",
+                        "value": "Electrodomesticos"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Todo sobre tecnologia"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "6e87058a-cb76-46b8-85d1-052cb655383c",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "e88cf537-286e-4ee1-9918-ac215d3a5bd2",
+            "name": "updateCategory",
+            "url": "/category/CategoryUpdate/65d86c095bebce8da645d265",
+            "method": "PUT",
+            "sortNum": 120000,
+            "created": "2024-03-08T18:52:08.214Z",
+            "modified": "2024-03-08T18:52:08.214Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameCategory",
+                        "value": "Electrodomésticos"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Impresora 3D marca Epson"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "de7f0da8-dd25-422a-9af2-ca5e4f73f1dd",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "e88cf537-286e-4ee1-9918-ac215d3a5bd2",
+            "name": "DeleteCategory",
+            "url": "/category/deleteCategory/65eb749a7b465a63b0475827",
+            "method": "DELETE",
+            "sortNum": 130000,
+            "created": "2024-03-08T18:52:08.215Z",
+            "modified": "2024-03-08T20:32:48.503Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViNzBhZWE3NzNmMGY3MWYwNjY2Y2IiLCJ1c2VybmFtZSI6Im9zY2FyaW4iLCJuYW1lIjoiT3NjYXJpbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTkyOTEzMCwiZXhwIjoxNzA5OTM5OTMwfQ.iKy0x1k26NsjGRhmySUtoeOVvGVD2L8UJr0ijOzH8QQ"
+                }
+            ],
+            "params": [],
+            "reqType": "del",
+            "tests": []
+        },
+        {
+            "_id": "f652b955-f818-417e-9404-ec2913774833",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "e88cf537-286e-4ee1-9918-ac215d3a5bd2",
+            "name": "listCategory",
+            "url": "/category/listCategory",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2024-03-08T18:52:08.216Z",
+            "modified": "2024-03-08T21:55:04.734Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViNzYyZDU1M2E2OWE0MmI4ZWZjYWQiLCJ1c2VybmFtZSI6Im9zY2FyaW4iLCJuYW1lIjoiT3NjYXJpbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTkzNDg3NiwiZXhwIjoxNzA5OTQ1Njc2fQ.18LbdOgrww6llGu5bHp-9lhQFFSHkHvaFwrAjX1PHiQ"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "3c29f912-ebbf-49f6-9e7e-6f976bac636e",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "859e6128-8347-441b-983b-dad2409cc7b4",
+            "name": "shoppingCart",
+            "url": "/shopping/shoppingCart/65eb611839f370301f361faf",
+            "method": "POST",
+            "sortNum": 160000,
+            "created": "2024-03-08T18:52:08.217Z",
+            "modified": "2024-03-08T19:21:19.733Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViNjAzYTM5ZjM3MDMwMWYzNjFmOWQiLCJ1c2VybmFtZSI6Im9zY2FyaW4iLCJuYW1lIjoiT3NjYXJpbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTkyNDU1OCwiZXhwIjoxNzA5OTM1MzU4fQ.qNB_ynayVJVVBnLD2zpK2N3CE_BWiXMRw8rq0CNqsiY"
+                }
+            ],
+            "params": [
+                {
+                    "name": "product",
+                    "value": "",
+                    "isDisabled": true,
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "amount",
+                        "value": "2"
+                    }
+                ]
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "4b2aa95a-441e-48e7-b2f1-9d599d5bb6e0",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "38d9fe63-ce82-429e-9046-0b1fb56d7dde",
+            "name": "listBills",
+            "url": "/buy/listBills",
+            "method": "GET",
+            "sortNum": 180000,
+            "created": "2024-03-08T18:52:08.219Z",
+            "modified": "2024-03-08T19:10:42.034Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViNjAzYTM5ZjM3MDMwMWYzNjFmOWQiLCJ1c2VybmFtZSI6Im9zY2FyaW4iLCJuYW1lIjoiT3NjYXJpbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTkyNDU1OCwiZXhwIjoxNzA5OTM1MzU4fQ.qNB_ynayVJVVBnLD2zpK2N3CE_BWiXMRw8rq0CNqsiY"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "19face88-3dbb-4a81-967c-b7d80b5f8296",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "38d9fe63-ce82-429e-9046-0b1fb56d7dde",
+            "name": "buy",
+            "url": "/buy/buy",
+            "method": "POST",
+            "sortNum": 200000,
+            "created": "2024-03-08T18:52:08.220Z",
+            "modified": "2024-03-08T19:11:14.761Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViNjAzYTM5ZjM3MDMwMWYzNjFmOWQiLCJ1c2VybmFtZSI6Im9zY2FyaW4iLCJuYW1lIjoiT3NjYXJpbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTkyNDU1OCwiZXhwIjoxNzA5OTM1MzU4fQ.qNB_ynayVJVVBnLD2zpK2N3CE_BWiXMRw8rq0CNqsiY"
+                }
+            ],
+            "params": [],
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "a033c638-8b34-49fe-b6d3-8ea2bd88f915",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "f9920fcd-2d6a-4d84-8b61-f16a5ead78ec",
+            "name": "productSearchCategory",
+            "url": "/product/productSearchCategory/65eb60ef39f370301f361fa9",
+            "method": "GET",
+            "sortNum": 210000,
+            "created": "2024-03-08T18:52:08.221Z",
+            "modified": "2024-03-08T19:06:39.018Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "0ecbc0cd-72ed-4a75-9b1b-c79e27ee72c9",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "f9920fcd-2d6a-4d84-8b61-f16a5ead78ec",
+            "name": "productNoStock",
+            "url": "/product/productNoStock",
+            "method": "GET",
+            "sortNum": 220000,
+            "created": "2024-03-08T18:52:08.222Z",
+            "modified": "2024-03-08T18:52:08.222Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "de9c8013-3b57-4a0a-a6d8-941e845a9fc1",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "f9920fcd-2d6a-4d84-8b61-f16a5ead78ec",
+            "name": "getTopSellingProducts",
+            "url": "/product/getTopSellingProduct",
+            "method": "GET",
+            "sortNum": 230000,
+            "created": "2024-03-08T18:52:08.223Z",
+            "modified": "2024-03-08T18:52:08.223Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b95d57b2-af88-4b30-a867-fd1da496c2c2",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "f9920fcd-2d6a-4d84-8b61-f16a5ead78ec",
+            "name": "searchProductByName",
+            "url": "/product/searchProductAZ",
+            "method": "GET",
+            "sortNum": 240000,
+            "created": "2024-03-08T18:52:08.224Z",
+            "modified": "2024-03-08T19:14:29.523Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "9b9d174f-3735-4809-a574-22eeba1edbdb",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "859e6128-8347-441b-983b-dad2409cc7b4",
+            "name": "deleteShoppingCart",
+            "url": "/shopping/deleteShoppingCart/65eb607639f370301f361f9f",
+            "method": "DELETE",
+            "sortNum": 250000,
+            "created": "2024-03-08T18:53:42.618Z",
+            "modified": "2024-03-08T19:23:05.486Z",
+            "headers": [
+                {
+                    "name": "token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViNjAzYTM5ZjM3MDMwMWYzNjFmOWQiLCJ1c2VybmFtZSI6Im9zY2FyaW4iLCJuYW1lIjoiT3NjYXJpbiIsInJvbGUiOiJBRE1JTiIsImlhdCI6MTcwOTkyNDU1OCwiZXhwIjoxNzA5OTM1MzU4fQ.qNB_ynayVJVVBnLD2zpK2N3CE_BWiXMRw8rq0CNqsiY"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "cd0505eb-8dd4-4b22-99c0-244be0a5e157",
+            "colId": "5370c982-36b2-4eef-8806-fecdb54c5ff5",
+            "containerId": "f9920fcd-2d6a-4d84-8b61-f16a5ead78ec",
+            "name": "searchProductsName",
+            "url": "/product/searchProductsName",
+            "method": "GET",
+            "sortNum": 260000,
+            "created": "2024-03-08T19:26:05.757Z",
+            "modified": "2024-03-08T19:28:20.120Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "nameProduct",
+                        "value": "Piña"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:3600"
+        }
+    }
+}
